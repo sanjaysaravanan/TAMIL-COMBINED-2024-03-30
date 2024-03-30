@@ -1,0 +1,149 @@
+
+Roadmap Topics:
+
+  Day 1:
+    ES5 vs Es6
+    spread & rest prarameter
+    array & object destructure
+    module import & export
+
+  Day 2:
+    Why react :
+      Virtual DOM
+      SPA - Single Page Application
+
+    Setup react project:
+    Undetstanding JSX
+    Understanding the components
+
+  Day 3:
+
+    Passing data through props
+
+    Working with array lists
+    Usage of keys
+
+  Deploying react to Netlify
+
+Topics:
+
+  Node_modules: pre-written js codes to be included/imported in a project
+
+  Multi Page App:
+    https://retail.onlinesbi.sbi/personal/
+    A multiple refresh everytime to download common html codes/assets during interaction.
+    which leads lots of request and data consumtption and not being smooth
+
+  Single Page Application:
+
+    one single html with a js integrated, js controls the contents of the page
+
+    SPA, loads only the specific contents which needs changes and makes requests/assets call calls only for the specific region of the site
+
+  React Setup:
+
+    what is react?
+      front-end js library for manipulating DOM and producing contents using jsx
+
+    1. npm create vite@latest
+    2. enter project name
+    3. select framework react
+    4. select variant javascript
+    5. Follow the instructions on the screen
+      1. cd <project-name>
+      2. npm install
+      3. npm run dev
+
+  React: Complete Documentation ---> https://react.dev/
+    Structure of React & Folder Structure
+
+    jsx --> javascript xml, which permitts to write html elements inside js file
+      empty fragement --> <></>
+      expressions or varaibles can be used in curly braces
+
+    import/export
+
+      normal import/export using curly braces/ * as utils
+
+      default import/export
+
+    Virtual DOM:
+      Real DOM: Tree like structure 
+        html 
+          head
+            title
+            script
+            icon
+          body
+            div
+            h1
+            a
+            p
+
+      Virtual DOM: is In Memory Copy of the real DOM used while manipulating the DOM.
+
+      React  SPA:
+      Virtual DOM
+        The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM.
+
+      Advantage: reconciliation process
+
+        where the changes happens only in the virtual DOM which will be compared with old virtual DOM. And if any difference is found it will affected in the Real DOM. 
+
+        No changes, Only memory/Virtual DOM changes not the real DOM
+
+    webpack & babeljs conversion
+
+    components:
+      Simple function returning JSX syntax combined to form a single component
+        Eg:
+          Card, Instagram Post, Menu Options
+      can be used like a tag/element in jsx syntax
+      
+      Expressions/variables are put inside curly of jsx syntax
+    
+    props:
+      attributes passed for a component is called as prop
+      which can be used inside the props / destructured at component level
+
+    className instead of class ( class is a keyword in js )
+      class is a keyword for creating blueprints of user defined object
+      because of which we need to use className instead of class jsx syntax
+
+  Components (simple HTML layout to reusable react components)
+
+  props: 
+    the essential information needed to create a component for displaying the information
+
+    proptypes:
+      specifying the type of the props values needed to create a component
+      this helps in reducing unwanted errors because of typeerror
+
+    1. Working with array lists
+        List Rendering  
+
+Next Session:
+
+  Recap:
+    Conditional rendering
+    Handling Events
+    state
+
+    Usage of keys:
+      key props for a component is used to identify the element uniquely by VDOM
+      Do not use array index for key in component that will lead to confusion during interactions
+
+    3. Styles and Module styles
+      inline style --> using it as object
+      HTML Inline
+      <img src='https://image.com/image.png' style="height: 200px; width: 100px" />
+      React Inline
+      <img src={props.imageUrl} style={{ height: '200px', width: '100px' }} />
+
+      External Styling:
+        normal styling using .css
+        module styling using .module.css
+          import styles from './movie.module.css';
+          module styling only classNames and tags are allowed
+  
+
